@@ -94,6 +94,22 @@ public class HelloServlet extends HttpServlet {
         return Response.ok().entity(pokemon).build();
     }
 
+    @DELETE
+    @Path("supprimerpokemon/{id}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Pokemon deletePokemon(@PathParam("id") int id) {
+        Pokemon pokemon = new Pokemon();
+        for(int i=0; i<pokemons.size();i++){
+            if(id==pokemons.get(i).getId()){
+                pokemon = pokemons.get(i);
+                pokemons.remove(i);
+            }
+        }
+        return pokemon;
+    }
+
+
 }
 
 
