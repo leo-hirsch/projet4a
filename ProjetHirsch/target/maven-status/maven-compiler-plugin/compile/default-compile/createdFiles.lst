@@ -1,0 +1,5 @@
+fr\polytech\TPRest\Servlet\DBManager\HibernateFactory.class
+fr\polytech\TPRest\Servlet\Monstres.class
+fr\polytech\TPRest\Servlet\HelloServlet.class
+fr\polytech\TPRest\Servlet\DBManager\MonstresManager.class
+fr\polytech\TPRest\Servlet\Person.class
